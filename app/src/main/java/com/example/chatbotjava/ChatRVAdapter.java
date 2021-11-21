@@ -34,8 +34,10 @@ public class ChatRVAdapter extends RecyclerView.Adapter {
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_robot_chat,parent,false);
                 BotViewHolder botViewHolder = new BotViewHolder(view);
                 return botViewHolder;
+
+            default:
+                return null;
         }
-        return null;
     }
 
     @Override
